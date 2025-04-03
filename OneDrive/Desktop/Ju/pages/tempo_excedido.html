@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tempo Excedido</title>
+<link href="../css/style.css" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/../assets/background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    </style>
+<style>
+        body {
+          transition: opacity 0.5s ease;
+        }
+        </style></head>
+<body>
+<div class="mensagem-fracasso">
+<h1>Tempo Excedido!</h1>
+<p>O tempo acabou, mas você pode tentar novamente.</p>
+<!-- Botão que reinicia o cronômetro e redireciona para a página inicial -->
+<button class="btn-fixo" id="reiniciar">Tentar Novamente</button>
+</div>
+<script>
+    // Quando o botão for clicado, o tempo será resetado e o usuário será redirecionado para a página inicial
+    document.getElementById("reiniciar").addEventListener("click", function() {
+      // Remove o tempo do localStorage para resetar o cronômetro
+      localStorage.removeItem("tempoRestante");
+
+      // Redireciona para a página inicial ou a página do jogo
+      window.location.href = "primeirapg.html"; // Substitua com a página desejada para reiniciar o jogo
+    });
+  </script>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href], button[onclick]").forEach(el => {
+            el.addEventListener("click", () => {
+              document.body.style.opacity = "0";
+            });
+          });
+        });
+        </script></body>
+</html>

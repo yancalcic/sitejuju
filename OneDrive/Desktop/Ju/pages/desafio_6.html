@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prova de Amor</title>
+<link href="../css/style3.css" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/../assets/background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    </style>
+<style>
+        body {
+          transition: opacity 0.5s ease;
+        }
+        </style></head>
+<body>
+<!-- Aqui o timer começará com 2 minutos -->
+<h1 id="titulo">Qual minha estação favorita?</h1>
+<div class="button-grid">
+<a href="fracasso_2.html">
+<button class="btn-fixo">Primavera</button>
+</a>
+<a href="fracasso_1.html">
+<button class="btn-fixo">Verão</button>
+</a>
+<a href="desafio_7.html">
+<button class="btn-fixo">Inverno</button>
+</a>
+<a href="fracasso_3.html">
+<button class="btn-fixo">Outono</button>
+</a>
+</div>
+<script src="../js/script.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href], button[onclick]").forEach(el => {
+            el.addEventListener("click", () => {
+              document.body.style.opacity = "0";
+            });
+          });
+        });
+        </script></body>
+</html>

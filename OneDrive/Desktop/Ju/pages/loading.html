@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Carregando...</title>
+<meta content="3;url=time_together.html" http-equiv="refresh"/>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('../assets/../assets/background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Press Start 2P', cursive;
+      color: #2d002e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background-color: #ffeaf3e6;
+      padding: 80px 60px;
+      border-radius: 35px;
+      text-align: center;
+      box-shadow: 0 0 20px #f8c8dc;
+      max-width: 750px;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+    }
+    .bar {
+      margin-top: 30px;
+      height: 14px;
+      background: #fcb3d6;
+      border-radius: 10px;
+      animation: load 3s linear forwards;
+    }
+    @keyframes load {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+  </style>
+<style>
+        body {
+          transition: opacity 0.5s ease;
+        }
+        </style></head>
+<body>
+<div class="box">
+<h1>Calculando...</h1>
+<p>É muito tempo rsrs...</p>
+<div class="bar"></div>
+</div>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href], button[onclick]").forEach(el => {
+            el.addEventListener("click", () => {
+              document.body.style.opacity = "0";
+            });
+          });
+        });
+        </script></body>
+</html>

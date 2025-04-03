@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Sempre.</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('../assets/../assets/background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Press Start 2P', cursive;
+      color: #2d002e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background-color: #ffeaf3e6;
+      padding: 80px 60px;
+      border-radius: 35px;
+      text-align: center;
+      box-shadow: 0 0 20px #f8c8dc;
+      max-width: 750px;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+    }
+  </style>
+<style>
+        body {
+          transition: opacity 0.5s ease;
+        }
+        </style></head>
+<body>
+<div class="box">
+<h1>De 31/07/2021, Para sempre.</h1>
+<p>Esse site foi só uma parte do que quero construir com você.</p>
+</div>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href], button[onclick]").forEach(el => {
+            el.addEventListener("click", () => {
+              document.body.style.opacity = "0";
+            });
+          });
+        });
+        </script></body>
+</html>

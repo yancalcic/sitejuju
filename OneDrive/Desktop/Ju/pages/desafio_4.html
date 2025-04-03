@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ranking de Preferências</title>
+<link href="../css/style4.css" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/../assets/background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    </style>
+<style>
+        body {
+          transition: opacity 0.5s ease;
+        }
+        </style></head>
+<body>
+<!-- Aqui o timer começará com 2 minutos -->
+<h1 id="titulo">Ordene corretamente do melhor ao pior na minha opinião!</h1>
+<ul id="ranking-list">
+<li class="draggable" data-value="1" draggable="true">Audi</li>
+<li class="draggable" data-value="2" draggable="true">Mercedes</li>
+<li class="draggable" data-value="3" draggable="true">BMW</li>
+<li class="draggable" data-value="4" draggable="true">Porsche</li>
+</ul>
+<button id="confirmar">Confirmar</button>
+<script src="/js/ranking.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href], button[onclick]").forEach(el => {
+            el.addEventListener("click", () => {
+              document.body.style.opacity = "0";
+            });
+          });
+        });
+        </script></body>
+</html>
