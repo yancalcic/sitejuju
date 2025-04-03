@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prova de Amor</title>
+<link href="../css/style2.css" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/../assets/background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    </style>
+<style>
+        body {
+          transition: opacity 0.5s ease;
+        }
+        </style></head>
+<body>
+<h1 id="titulo">Você conseguiu passar a primeira parte da nossa brincadeira, vamos para a proxima?</h1>
+<!-- Aqui o timer começará com 2 minutos -->
+<a href="desafio_2.html">
+<button class="btn-fixo">Próxima!</button>
+</a>
+<script src="../js/script.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href], button[onclick]").forEach(el => {
+            el.addEventListener("click", () => {
+              document.body.style.opacity = "0";
+            });
+          });
+        });
+        </script></body>
+</html>

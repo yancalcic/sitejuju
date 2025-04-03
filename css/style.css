@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradiente suave de rosa */
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+}
+
+#titulo {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-fixo {
+  padding: 15px 30px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #4CAF50, #388E3C);
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-fixo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-movel {
+  padding: 15px 30px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #FF6347, #F44336);
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-movel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#timer {
+  font-size: 4em; /* Tamanho maior do timer */
+  color: white;
+  font-weight: bold;
+  position: fixed; /* Fixa o timer na tela */
+  top: 20px; /* Distância do topo */
+  right: 20px; /* Distância da direita */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o timer */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito de destaque */
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+.btn-fixo {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-fixo:hover {
+  background-color: #45a049;
+}
+
+#timer {
+  font-size: 4em; /* Tamanho maior do timer */
+  color: white;
+  font-weight: bold;
+  position: fixed; /* Fixa o timer na tela */
+  top: 20px; /* Distância do topo */
+  right: 20px; /* Distância da direita */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o timer */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito de destaque */
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+.btn-fixo {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-fixo:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Tempo Juntos</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('../assets/../assets/background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Press Start 2P', cursive;
+      color: #2d002e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #ffeaf3e6;
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px #f8c8dc;
+      max-width: 500px; padding: 60px 40px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 10px;
+      margin-bottom: 30px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 10px;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    .btn-sure {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    .btn-later {
+      background-color: #fcb3d6;
+      color: white;
+    }
+  </style>
+<style>
+        body {
+          transition: opacity 0.5s ease;
+        }
+        </style></head>
+<body>
+<div class="container">
+<h1>Tempo Juntos</h1>
+<p>Quer ver a quanto tempo nós estamos juntos?</p>
+<div class="button-group">
+<button class="btn btn-sure" onclick="window.location.href='loading.html'">Claro</button>
+<button class="btn btn-later">Depois.</button>
+</div>
+</div>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href], button[onclick]").forEach(el => {
+            el.addEventListener("click", () => {
+              document.body.style.opacity = "0";
+            });
+          });
+        });
+        </script></body>
+</html>

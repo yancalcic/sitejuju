@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente de fundo moderno */
+  text-align: center;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+#ranking-list {
+  list-style: none;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  background: linear-gradient(145deg, #ff6b81, #ff4757); /* Gradiente sutil */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+#ranking-list:hover {
+  background: linear-gradient(145deg, #ff6347, #e55347); /* Alteração de gradiente ao passar o mouse */
+}
+
+#ranking-list li {
+  background: #fff;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: grab;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  transition: background 0.3s, transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ranking-list li:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+#ranking-list .dragging {
+  opacity: 0.5;
+  background: #ddd;
+}
+
+#confirmar {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#confirmar:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+#ranking-list-container {
+  background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin-top: 50px;
+}
+
+#ranking-list-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#confirmar {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: pulse 1.5s infinite;
+}
+
+#confirmar:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+#ranking-list li {
+  background: #fff;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: grab;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ranking-list li:hover {
+  background: #f0f0f0;
+  transform: scale(1.05); /* Eleva o item da lista */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra mais forte */
+}
+
+#ranking-list .dragging {
+  opacity: 0.5;
+  background: #ddd;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  text-align: center;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#ranking-list li {
+  background: #fff;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 12px; /* Bordas mais arredondadas */
+  cursor: grab;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+}
+
+#ranking-list-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin-top: 50px;
+}
+
+#timer {
+  font-size: 4em; /* Tamanho maior do timer */
+  color: white;
+  font-weight: bold;
+  position: fixed; /* Fixa o timer na tela */
+  top: 20px; /* Distância do topo */
+  right: 20px; /* Distância da direita */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o timer */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito de destaque */
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+.btn-fixo {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-fixo:hover {
+  background-color: #45a049;
+}
